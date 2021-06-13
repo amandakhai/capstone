@@ -12,7 +12,6 @@ __pycache__/
 
 
 
-
 # C extensions
 
 *.so
@@ -148,6 +147,14 @@ instance/
 # Scrapy stuff:
 
 .scrapy
+
+
+
+
+
+# Files over 100 MB:
+distance_df.csv
+final_df_min.csv
 
 
 
