@@ -26,11 +26,13 @@ This project aims to explore the use of machine learning in determining where to
    
    **Mapping**
    
-   ![](./graphics/venue_map.png) ![](./graphics/venue_ratings.png)
+   ![](./graphics/venue_map.png)
    
-   Out of ~14.9K venues collected from 101 cities / towns in 9 counties around the Bay Area, the map on the left shows a summary of the particular areas weighted based on the number of population in said cities / towns and categorized by counties. We can observe that out of all the counties, San Francisco, Santa Clara and Alameda are three of the highest populated counties.
+   Out of ~14.9K venues collected from 101 cities / towns in 9 counties around the Bay Area, the map above shows a summary of the particular areas weighted based on the number of population in said cities / towns and categorized by counties. We can observe that out of all the counties, San Francisco, Santa Clara and Alameda are three of the highest populated counties.
    
-   Looking at the map on the right, we can see the venues collected weighted by user ratings based on its location within the Bay Area. We can observe how coffee shops seem to cluster in relatively high populated areas like San Francisco and Alameda, when comparing it to the the map on the left.
+   ![](./graphics/venue_ratings.png)
+   
+   Looking at the map above, we can see the venues collected weighted by user ratings based on its location within the Bay Area. We can observe how coffee shops seem to cluster in relatively high populated areas like San Francisco and Alameda, when comparing it to the Area Population Based on Counties map.
    
    **Coffee Shop Analysis**
    
