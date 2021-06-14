@@ -77,7 +77,7 @@ This project aims to explore the use of machine learning in determining where to
    
    The decision to use an interpretable classification model was made based on the following simplified logic: by understanding what kind of venues are considered an important feature or have a degree of consanguinity with coffee shops, we can suggest clients to open their businesses near those venues. The best model will then be used to determine the categories of venues that should be looked at and potentially, together with the engineered features that were dropped, we can narrow down the location(s) even more.
    
-   ![](./classification_metrics.png)
+   ![](./graphics/classification_metrics.png)
    
    Looking at the metrics summary above, we can conclude that Random Forest Classifier is the best model to use because it is the most accurate, relatively balanced and is able to split the data almost perfectly at 99.7%.
    
