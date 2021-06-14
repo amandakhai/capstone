@@ -13,9 +13,10 @@ This project aims to explore the use of machine learning in determening where to
 - User generated data: Rating and reviews per venue based on Google Places API
 
 ## II. Summary of Execution
-   ### a. Data Collection
+   ### a. Data Collection and Cleaning
    ### b. Exploratory Data Analysis
    ### c. Modeling and Evaluation
+   ### d. Inference and Recommendations
 
 ## III. Conclusion: Recommendations and Limitations
 
