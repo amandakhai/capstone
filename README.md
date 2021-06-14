@@ -44,13 +44,13 @@ This project aims to explore the use of machine learning in determining where to
    
    ***Population per Coffee Shop in Area***
    
-   ![](./graphics/cs_per_ratings.png)
+   ![](./graphics/cs_per_rating.png)
    
    The bar chart above represents the average rating of Coffee Shops per area.
    
    ***Population per Coffee Shop in Area***
    
-   ![](./graphics/cs_per_price.png)
+   ![](./graphics/cs_per_pl.png)
    
    The above graph shows the average price level of coffee shops in the area. We can observe that the highest price level is 2, which means one order can be around USD 10-25 - a relatively steep price for coffee. We can also see that Half Moon Bay, Tiburon, Belverea and Susalito's price levels are 0, this is due to the fact that some venues do not have Google API's atmospheric data.
    
