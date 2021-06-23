@@ -3,12 +3,17 @@
 
 ## I. Background + Problem Statement
 
-When opening an offline retail store, one of the most important things of highest capital expense to consider is location. Choosing the right location can be detrimental towards the survival of the business. 
+When opening an brick-and-mortar retail store, one of the most important things of highest capital expense to consider is location. Choosing the right location can be detrimental towards the survival of the business. 
 
 This project aims to explore the use of machine learning in determining where to open a coffee shop in the San Francisco Bay Area.
 
+## II. Methodology
 
-## II. Summary of Execution
+1. Build classification models to predict whether a venue is a coffee shop or not
+2. Identify venues that would most likely be close to a coffee shop based on the best performing model
+3. Recommend areas based on venues identified which currently does not have a coffee shop nearby
+
+## III. Summary of Execution
 
    ### a. Data Collection and Cleaning
    *[Notebook](./code/1.01-data_collection.ipynb)*
@@ -42,13 +47,13 @@ This project aims to explore the use of machine learning in determining where to
    
    The chart represents the density of population per number of Coffee Shops in the area. The higher the number, the less number of coffee shops there are per person.
    
-   ***Population per Coffee Shop in Area***
+   ***Average Ratings per Coffee Shop in Area***
    
    ![](./graphics/cs_per_rating.png)
    
    The bar chart above represents the average rating of Coffee Shops per area.
    
-   ***Population per Coffee Shop in Area***
+   ***Average Price Level per Coffee Shop in Area***
    
    ![](./graphics/cs_per_pl.png)
    
@@ -62,7 +67,7 @@ This project aims to explore the use of machine learning in determining where to
    
    **Population and Density Metrics**
    - User Ratings as % of Population: No. of User Ratings here are used as a proxy for traffic in the area and is engineered to become a percent of the population to show penetration
-   - Venue and Coffee Shop per Capita: Number of venues and coffee shops divided by the population per area
+   - Venue and Coffee Shop per Capita: Number of venues and coffee shops scaled based on the population per area
    
    **Distance Matrix**
    - Venue per Area: Calculating the distance (in meters) between each venue
@@ -75,7 +80,7 @@ This project aims to explore the use of machine learning in determining where to
    ### d. Modeling and Evaluation
    *[Notebook](./code/4.01-model_fit.ipynb)*
    
-   The decision to use an interpretable classification model was made based on the following simplified logic: by understanding what kind of venues are considered an important feature or have a degree of consanguinity with coffee shops, we can suggest clients to open their businesses near those venues. The best model will then be used to determine the categories of venues that should be looked at and potentially, together with the engineered features that were dropped, we can narrow down the location(s) even more.
+   The decision to use an interpretable classification model was made based on the following simplified logic: by understanding what kind of venues are considered an important feature or have a degree of dependency with coffee shops, we can suggest clients to open their businesses near those venues. The best model will then be used to determine the categories of venues that should be looked at and potentially, together with the engineered features that were dropped, we can narrow down the location(s) even more.
    
    ![](./graphics/classification_metrics.png)
    
@@ -84,7 +89,7 @@ This project aims to explore the use of machine learning in determining where to
    *Note: Due to the imbalanced nature of the data (due to the fact that only 5.6% of total venues collected are Coffee Shop), SMOTE is applied in order to balance out the classes of data for the model to train on.*
    
   
-## III. Conclusion: Recommendations and Limitations
+## IV. Conclusion: Recommendations and Limitations
 *[Notebook](./code/5.01-inference_and_recommendations.ipynb)*
 
 Using the top 5 feature importances of the Random Forest Classification model (Park, Pizza Place, Ice Cream Shop, Mexican Restaurant, and Bakery), we filter the dataset to only look at those particular venues (~10% of total venues collected). For every venue within the selected categories we look at the distance between them and all coffee shops, and if said distance is less than or equal to the minimum distance of coffee shop to the venue, the venue is not recommended (because it means that there is a coffee shop nearby already). 
